@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Siostry Wynagrodzicielki Najświętszego Serca Jezusowego - Lublin</title>
+<meta name="description" content="Siostry Służebnice Wynagrodzicielki Najświętszego Serca Jezusowego w Lublinie: adoracja, Rodzinny Dom Dziecka im. Serca Jezusa, dni skupienia dla młodzieży, Straż Honorowa.">
+<meta name="theme-color" content="#D70019">
+<link rel="icon" href="img/emblemat.png">
+<link rel="preload" href="fonts/marcellus-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Marcellus";font-weight:400;font-display:swap;src:url(fonts/marcellus-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Marcellus";font-weight:400;font-display:swap;src:url(fonts/marcellus-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+/* kolory ze znaku i logotypu: czerwien #D70019, zloto promieni #C9A24A / #E4C382 */
+:root{--cz:#D70019;--cz2:#B30015;--bord:#7C0613;--zl:#C9A24A;--zlj:#E4C382;--ink:#1E1F24;--mut:#55575F;--sz:#F3F4F6;--lin:#E1E3E8;--hh:64px;--w:calc(100vw - 32px);--gap:clamp(72px,9vw,136px)}
+@media (min-width:960px){:root{--hh:80px;--w:min(88vw,1280px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 17px/1.65 Jost,system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Marcellus,Georgia,serif;font-weight:400;line-height:1.15;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(30px,3.6vw,48px);color:var(--ink)}
+h3{font-size:clamp(22px,2vw,27px)}
+p{margin:0 0 1em}
+.w{width:var(--w);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 26px;border-radius:3px;font:500 16.5px/1 Jost,sans-serif;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn.cz{background:var(--cz);color:#fff}
+.btn.cz:hover{background:var(--cz2)}
+.btn.ob{border-color:rgba(255,255,255,.85);color:#fff;background:transparent}
+.btn.ob:hover{background:#fff;color:var(--ink)}
+.btn.ob2{border-color:var(--ink);color:var(--ink)}
+.btn.ob2:hover{background:var(--ink);color:#fff}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--lin)}
+.top .w{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .em{width:44px;height:44px}
+.logo .nap{width:176px;height:auto}
+@media (min-width:960px){.logo .nap{width:226px}}
+.menu{display:none}
+.menu a{text-decoration:none;font-weight:500;font-size:16px;color:var(--ink);padding:8px 0;position:relative}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1.5px;background:var(--cz);transform:scaleX(0);transition:transform .2s}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+.menu .btn{min-height:44px;padding:0 20px;font-size:15.5px}
+@media (min-width:1100px){.menu{display:flex;align-items:center;gap:28px}.burg{display:none!important}}
+.burg{display:flex;flex-direction:column;justify-content:center;gap:6px;width:48px;height:48px;border:0;background:none;padding:10px;cursor:pointer;margin-right:-10px}
+.burg i{display:block;height:2px;background:var(--ink);transition:transform .25s,opacity .2s}
+.burg[aria-expanded=true] i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burg[aria-expanded=true] i:nth-child(2){opacity:0}
+.burg[aria-expanded=true] i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.mob{position:fixed;inset:var(--hh) 0 0 0;z-index:49;background:#fff;padding:24px 16px 32px;display:flex;flex-direction:column;gap:2px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .22s,transform .22s,visibility .22s;overflow:auto}
+.mob.on{opacity:1;transform:none;visibility:visible}
+.mob a{font-family:Marcellus,serif;font-size:26px;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--lin)}
+.mob .btn{font-family:Jost,sans-serif;font-size:17px;margin-top:22px;border:0}
+.mob .kt{margin-top:22px;color:var(--mut);font-size:16px;line-height:1.7}
+.mob .kt a{font:inherit;border:0;padding:0;color:var(--ink)}
+/* pierwszy ekran: mozaika ich zdjec, promienie jak na znaku */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:center;justify-content:center;color:#fff;overflow:hidden;isolation:isolate;background:#2a0a0f}
+.moz{position:absolute;inset:0;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(4,1fr);gap:2px;z-index:-3;background:#fff}
+.moz img{width:100%;height:100%;object-fit:cover}
+@media (min-width:760px){.moz{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse 62% 58% at 50% 52%,rgba(52,6,14,.80) 0%,rgba(52,6,14,.62) 55%,rgba(40,6,12,.36) 100%)}
+@media (max-width:759px){.hero::before{background:radial-gradient(ellipse 95% 62% at 50% 52%,rgba(52,6,14,.82) 0%,rgba(52,6,14,.66) 60%,rgba(40,6,12,.42) 100%)}}
+.promienie{position:absolute;left:50%;top:50%;width:1800px;height:1800px;transform:translate(-50%,-50%);z-index:-1;pointer-events:none}
+.promienie line{stroke:var(--zlj);stroke-width:1.2;opacity:.26}
+.hero .in{width:var(--w);max-width:880px;text-align:center;padding:36px 0 40px;display:flex;flex-direction:column;align-items:center}
+.hero .em{width:88px;height:88px;border-radius:50%;box-shadow:0 0 0 1px rgba(228,195,130,.6),0 0 0 7px rgba(228,195,130,.12);margin-bottom:22px}
+.hero h1{font-size:clamp(30px,4.6vw,60px);line-height:1.12;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero .lead{font-size:clamp(17px,1.5vw,20px);line-height:1.6;max-width:660px;margin:20px auto 0;color:#fff;text-wrap:pretty;text-shadow:0 1px 12px rgba(0,0,0,.45)}
+.hero .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.hero .adr{margin:22px 0 0;font-size:15.5px;color:#fff;opacity:.85;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+@media (max-width:759px){.hero .in{padding:28px 0 30px}.hero .em{width:64px;height:64px;margin-bottom:16px}.hero .lead{margin-top:14px}.hero .cta{margin-top:24px;width:100%}.hero .cta .btn{flex:1 1 100%}.hero .adr{margin-top:16px}}
+@media (max-width:380px) and (max-height:700px){.hero h1{font-size:27px}.hero .lead{font-size:16px;line-height:1.5}.hero .em{width:54px;height:54px;margin-bottom:12px}.hero .cta .btn{min-height:48px}}
+/* separator: serce z promieniami */
+.sep{display:flex;align-items:center;gap:18px;margin:0 0 28px}
+.sep svg{width:44px;height:44px;flex:none}
+.sep::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--zl),rgba(201,162,74,0))}
+.zp line{stroke:var(--zl);stroke-width:2.4;stroke-linecap:round}
+.zs{fill:var(--cz)}
+.ciem .zp line{stroke:var(--zlj)}
+.ciem .zs{fill:#fff}
+section{padding:var(--gap) 0}
+.sza{background:var(--sz)}
+/* o nas */
+.onas{display:grid;gap:40px}
+.onas .fo{position:relative}
+.onas .fo{order:2}
+.onas .fo img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 30%}
+@media (min-width:960px){.onas .fo{order:0}.onas .fo img{aspect-ratio:4/5}}
+.onas .intro{font-size:clamp(18px,1.5vw,20.5px);line-height:1.6;margin-top:22px;color:var(--ink)}
+.filary{margin-top:34px;border-top:1px solid var(--lin)}
+.filar{padding:22px 0;border-bottom:1px solid var(--lin);display:grid;gap:6px}
+.filar h3{color:var(--cz)}
+.filar p{margin:0;color:var(--mut)}
+.cyt{margin:30px 0 0;padding-left:20px;border-left:2px solid var(--zl);font-family:Marcellus,serif;font-size:20px;line-height:1.45;color:var(--ink)}
+.cyt small{display:block;font-family:Jost,sans-serif;font-size:15px;color:var(--mut);margin-top:8px}
+@media (min-width:960px){.onas{grid-template-columns:5fr 6fr;gap:clamp(48px,6vw,96px);align-items:start}.onas .fo{position:sticky;top:calc(var(--hh) + 32px)}}
+/* spotkania - karty przesuwane */
+.nag{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 32px;margin-bottom:34px}
+.nag p{margin:0;color:var(--mut);max-width:520px}
+.str{display:flex;gap:10px}
+.str button{width:48px;height:48px;border:1.5px solid var(--ink);background:transparent;border-radius:50%;cursor:pointer;display:grid;place-items:center;color:var(--ink);transition:background .2s,color .2s}
+.str button:hover{background:var(--ink);color:#fff}
+.str button:disabled{opacity:.3;cursor:default;background:transparent;color:var(--ink)}
+.str svg{width:18px;height:18px}
+.tor{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px;margin:0 -2px;cursor:grab;-webkit-overflow-scrolling:touch}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor.drag *{pointer-events:none}
+.kar{flex:0 0 min(84vw,400px);scroll-snap-align:start;background:#fff;display:flex;flex-direction:column}
+.kar img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.kar .tx{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1;border-top:3px solid var(--cz)}
+.kar time{font-size:15px;color:var(--cz);font-weight:500}
+.kar h3{font-size:22px}
+.kar p{margin:0;color:var(--mut);font-size:16px;line-height:1.55}
+.kar .gdz{margin-top:auto;padding-top:10px;font-size:15px;color:var(--ink)}
+/* straz honorowa */
+.straz{display:grid;gap:44px;align-items:center}
+.tarcza{width:min(100%,460px);margin:0 auto;display:block}
+.tarcza .o{fill:#fff;stroke:var(--zl);stroke-width:2}
+.tarcza .o2{fill:none;stroke:var(--zl);stroke-width:.8;opacity:.6}
+.tarcza .pr line{stroke:var(--zl);stroke-width:1.6;stroke-linecap:round}
+.tarcza .pr line.t{stroke-width:2.2}
+.tarcza .nr text{font:15px Marcellus,serif;fill:#9A7A2E;text-anchor:middle}
+.tarcza .se{fill:var(--cz);stroke:var(--zl);stroke-width:1.5}
+.tarcza .pl{fill:var(--cz);stroke:var(--zl);stroke-width:1.2}
+.tarcza .kr{fill:var(--zl)}
+.lista{list-style:none;padding:0;margin:22px 0 30px;border-top:1px solid var(--lin)}
+.lista li{padding:13px 0 13px 34px;border-bottom:1px solid var(--lin);position:relative}
+.lista li::before{content:"";position:absolute;left:4px;top:23px;width:16px;height:1.5px;background:var(--zl)}
+@media (min-width:960px){.straz{grid-template-columns:1fr 1.1fr;gap:clamp(56px,7vw,110px)}}
+/* dom dziecka - jedna ciemna sekcja w kolorze czerwieni znaku */
+.ciem{background:var(--bord);color:#fff}
+.ciem h2{color:#fff}
+.ciem .sep::after{background:linear-gradient(90deg,var(--zlj),rgba(228,195,130,0))}
+.dom{display:grid;gap:36px}
+.dom .op{font-size:clamp(17px,1.4vw,19px);color:rgba(255,255,255,.9)}
+.dom .op b{color:#fff;font-weight:500}
+@media (min-width:960px){.dom{grid-template-columns:1.1fr 1fr;gap:clamp(48px,6vw,96px)}}
+.gal{margin-top:46px}
+.gal .tor{gap:10px}
+.gal .str button{border-color:rgba(255,255,255,.8);color:#fff}
+.gal .str button:hover{background:#fff;color:var(--bord)}
+.gal .str button:disabled{background:transparent;color:#fff}
+.fot{flex:0 0 auto;height:clamp(240px,30vw,340px);scroll-snap-align:start;border:0;padding:0;background:none;cursor:zoom-in}
+.fot img{height:100%;width:auto;object-fit:cover}
+.pom{display:grid;gap:26px;margin-top:56px;padding-top:44px;border-top:1px solid rgba(228,195,130,.35)}
+.pom h3{color:#fff;margin-bottom:12px}
+.pom ul{margin:0;padding:0;list-style:none;columns:1;column-gap:32px}
+.pom li{padding:8px 0 8px 26px;position:relative;break-inside:avoid;color:rgba(255,255,255,.9)}
+.pom li::before{content:"";position:absolute;left:0;top:20px;width:14px;height:1.5px;background:var(--zlj)}
+.konto{background:#fff;color:var(--ink);padding:26px 26px 24px;border-top:3px solid var(--zl);align-self:start}
+.konto p{margin:0 0 6px;color:var(--mut);font-size:15.5px}
+.konto .nr{font-family:Marcellus,serif;font-size:clamp(20px,2vw,25px);letter-spacing:.02em;color:var(--ink);margin:4px 0 16px;word-spacing:.08em}
+.konto .btn{min-height:46px;font-size:15.5px}
+@media (min-width:700px){.pom ul{columns:2}}
+@media (min-width:960px){.pom{grid-template-columns:1.6fr 1fr;gap:56px}}
+/* film */
+.film{display:grid;gap:34px;align-items:center}
+.wid{position:relative;aspect-ratio:16/9;background:#000;border:0;padding:0;cursor:pointer;width:100%;overflow:hidden}
+.wid img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.wid:hover img{transform:scale(1.02)}
+.wid .gr{position:absolute;left:18px;bottom:18px;width:72px;height:72px;border-radius:50%;background:var(--cz);display:grid;place-items:center;box-shadow:0 0 0 8px rgba(215,0,25,.25)}
+.wid .gr svg{width:26px;height:26px;margin-left:4px;fill:#fff}
+.wid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (min-width:960px){.film{grid-template-columns:1fr 1.6fr;gap:72px}}
+/* powolania */
+.pow{display:grid;gap:40px;align-items:center}
+.pow .fo img{width:100%;aspect-ratio:1;object-fit:cover}
+.pow .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.swiat{margin-top:clamp(56px,7vw,96px);display:grid;gap:28px;align-items:center;padding-top:clamp(40px,5vw,64px);border-top:1px solid var(--lin)}
+.swiat img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.kraje{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin:16px 0 18px;font-family:Marcellus,serif;font-size:clamp(19px,1.9vw,24px);line-height:1.3}
+@media (min-width:1200px){.kraje{display:flex;flex-wrap:wrap;gap:8px 0}.kraje span:not(:last-child)::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--zl);margin:0 14px;vertical-align:middle}}
+.swiat p{color:var(--mut);margin:0}
+@media (min-width:960px){.pow{grid-template-columns:1fr 1.15fr;gap:clamp(56px,7vw,110px)}.swiat{grid-template-columns:1.4fr 1fr;gap:64px}}
+/* kontakt */
+.kon{display:grid;gap:44px}
+.dane{display:grid;gap:22px;margin-top:8px}
+.dane div{border-top:1px solid var(--lin);padding-top:16px}
+.dane b{display:block;font-weight:500;margin-bottom:4px}
+.dane a{text-decoration:none;border-bottom:1px solid rgba(215,0,25,.35)}
+.dane a:hover{color:var(--cz)}
+.dane span{color:var(--mut)}
+.int{background:var(--sz);padding:clamp(24px,3vw,40px)}
+.int h3{margin-bottom:8px}
+.int p{color:var(--mut);margin-bottom:18px}
+.int label{display:block;font-size:15px;font-weight:500;margin:14px 0 6px}
+.int input,.int textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C9CCD3;border-radius:2px;background:#fff;color:var(--ink)}
+.int input:focus,.int textarea:focus{outline:2px solid var(--cz);outline-offset:0;border-color:transparent}
+.int textarea{min-height:130px;resize:vertical}
+.int .btn{margin-top:18px;width:100%}
+.int .ok{margin:14px 0 0;color:var(--cz);font-weight:500}
+.mapa{margin-top:clamp(48px,6vw,80px);height:360px;width:100%;background:#E6E8EC;position:relative}
+@media (min-width:960px){.mapa{height:460px}}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (min-width:960px){.kon{grid-template-columns:1fr 1fr;gap:clamp(56px,7vw,110px)}}
+/* stopka */
+.stop{background:#16171B;color:#B9BBC2;padding:56px 0 28px;font-size:15.5px}
+.stop .g{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px}
+.stop .g>div:first-child{grid-column:1/-1}
+.stop b{color:#fff;font-weight:500;display:block;margin-bottom:6px}
+.stop a{text-decoration:none}
+.stop a:hover{color:#fff}
+.stop p{margin:0 0 4px}
+.stop .dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:40px;padding-top:22px;border-top:1px solid #2C2E35;font-size:14.5px}
+@media (min-width:960px){.stop .g{grid-template-columns:1.4fr 1fr 1fr 1fr}.stop .g>div:first-child{grid-column:auto}}
+{{BADGE_STYLE}}
+.dol .wylinka-badge{white-space:nowrap}
+/* podglad zdjec */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,10,12,.94);display:none;align-items:center;justify-content:center;padding:56px 12px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb button{position:absolute;top:10px;right:10px;width:48px;height:48px;border:0;background:none;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">{{ZNAK}}<symbol id="str" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></symbol></svg>
+
+<header class="top">
+ <div class="w">
+  <a class="logo" href="#" aria-label="Wynagrodzicielki NSJ - strona główna">
+   <img class="nap" src="img/logo-napis.webp" width="339" height="72" alt="Wynagrodzicielki NSJ">
+  </a>
+  <nav class="menu" aria-label="Menu">
+   <a href="#o-nas">O nas</a>
+   <a href="#spotkania">Spotkania</a>
+   <a href="#straz">Straż Honorowa</a>
+   <a href="#dom">Dom dziecka</a>
+   <a href="#powolania">Powołania</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="btn cz" href="#wesprzyj">Darowizny</a>
+  </nav>
+  <button class="burg" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mob"><i></i><i></i><i></i></button>
+ </div>
+</header>
+<nav class="mob" id="mob" aria-label="Menu mobilne">
+ <a href="#o-nas">O nas</a>
+ <a href="#spotkania">Spotkania i rekolekcje</a>
+ <a href="#straz">Straż Honorowa</a>
+ <a href="#dom">Rodzinny dom dziecka</a>
+ <a href="#powolania">Powołania</a>
+ <a href="#kontakt">Kontakt i intencje</a>
+ <a class="btn cz" href="#wesprzyj">Wesprzyj dom dziecka</a>
+ <p class="kt">ul. Judyma 47, 20-716 Lublin<br><a href="tel:+48815277070">81 527 70 70</a></p>
+</nav>
+
+<main>
+<section class="hero" aria-label="Siostry Wynagrodzicielki w Lublinie" style="padding:0">
+ <div class="moz" aria-hidden="true">
+  <img src="img/m1-480.webp" srcset="img/m1-480.webp 480w, img/m1-800.webp 800w, img/m1-1024.webp 1024w" sizes="(min-width:760px) 25vw, 50vw" width="1024" height="1024" alt="" fetchpriority="high">
+  <img src="img/m2-480.webp" srcset="img/m2-480.webp 480w, img/m2-800.webp 800w, img/m2-900.webp 900w" sizes="(min-width:760px) 25vw, 50vw" width="900" height="916" alt="" fetchpriority="high">
+  <img src="img/m10-480.webp" srcset="img/m10-480.webp 480w, img/m10-800.webp 800w, img/m10-900.webp 900w" sizes="(min-width:760px) 25vw, 50vw" width="900" height="599" alt="">
+  <img src="img/m5-480.webp" srcset="img/m5-480.webp 480w, img/m5-800.webp 800w, img/m5-1024.webp 1024w" sizes="(min-width:760px) 25vw, 50vw" width="1024" height="1024" alt="">
+  <img src="img/m7-480.webp" srcset="img/m7-480.webp 480w, img/m7-800.webp 800w, img/m7-1024.webp 1024w" sizes="(min-width:760px) 25vw, 50vw" width="1024" height="1024" alt="">
+  <img src="img/m8-480.webp" srcset="img/m8-480.webp 480w, img/m8-675.webp 675w" sizes="(min-width:760px) 25vw, 50vw" width="675" height="900" alt="">
+  <img src="img/g1-480.webp" srcset="img/g1-480.webp 480w, img/g1-800.webp 800w, img/g1-900.webp 900w" sizes="(min-width:760px) 25vw, 50vw" width="900" height="599" alt="">
+  <img src="img/m9-480.webp" srcset="img/m9-480.webp 480w, img/m9-800.webp 800w, img/m9-1024.webp 1024w" sizes="(min-width:760px) 25vw, 50vw" width="1024" height="1024" alt="">
+ </div>
+ {{PROMIENIE}}
+ <div class="in">
+  <img class="em" src="img/emblemat.webp" width="270" height="270" alt="">
+  <h1>Siostry Wynagrodzicielki Najświętszego Serca Jezusowego w Lublinie</h1>
+  <p class="lead">Wynagradzamy miłością: adoracją Najświętszego Sakramentu i codzienną opieką nad dziećmi w Rodzinnym Domu im. Serca Jezusa.</p>
+  <div class="cta">
+   <a class="btn cz" href="#spotkania">Najbliższe spotkania</a>
+   <a class="btn ob" href="#wesprzyj">Wesprzyj dom dziecka</a>
+  </div>
+  <p class="adr">ul. Judyma 47, Lublin</p>
+ </div>
+</section>
+
+<section id="o-nas">
+ <div class="w onas">
+  <div class="fo">
+   <img src="img/m2-800.webp" srcset="img/m2-480.webp 480w, img/m2-800.webp 800w, img/m2-900.webp 900w" sizes="(min-width:960px) 40vw, 92vw" width="900" height="916" alt="Siostra z wychowanką Rodzinnego Domu im. Serca Jezusa" loading="lazy" decoding="async">
+  </div>
+  <div>
+   <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+   <h2>Co właściwie robią siostry?</h2>
+   <p class="intro">Jesteśmy kobietami powołanymi i konsekrowanymi Bogu, które żyją charyzmatem wynagradzania przekazanym przez Ojca Założyciela, ks. Antonino Celonę. W Polsce wynagradzamy miłością: opieką i troską wobec dzieci, które z różnych przyczyn nie mogły jej zaznać we własnym domu.</p>
+   <div class="filary">
+    <div class="filar"><h3>Adoracja</h3><p>Wszystkie nasze działania mają źródło w modlitwie kontemplacyjnej i adoracji Najświętszego Sakramentu. To jeden z głównych elementów naszego powołania.</p></div>
+    <div class="filar"><h3>Rodzinny dom dziecka</h3><p>Od 2000 roku prowadzimy w Lublinie całodobowy dom typu rodzinnego dla sześciorga dzieci pozbawionych opieki własnej rodziny.</p></div>
+    <div class="filar"><h3>Młodzi w drodze</h3><p>Prowadzimy dni skupienia, rekolekcje i spotkania formacyjne dla młodzieży i młodych dorosłych, także z rozeznawaniem powołania.</p></div>
+   </div>
+   <blockquote class="cyt">„Świat nie kocha Jezusa, bo Go nie zna…”<small>ks. Antonino Celona, Założyciel Zgromadzenia</small></blockquote>
+  </div>
+ </div>
+</section>
+
+<section id="spotkania" class="sza">
+ <div class="w">
+  <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+  <div class="nag">
+   <div>
+    <h2>Spotkania i aktualności</h2>
+   </div>
+   <p>Dni skupienia, wieczory modlitwy i wiadomości z naszego domu.</p>
+   <div class="str" data-tor="t1"><button type="button" class="pv" aria-label="Poprzednie"><svg style="transform:scaleX(-1)"><use href="#str"/></svg></button><button type="button" class="nx" aria-label="Następne"><svg><use href="#str"/></svg></button></div>
+  </div>
+  <div class="tor" id="t1">
+   <article class="kar">
+    <img src="img/a1-480.webp" srcset="img/a1-480.webp 480w, img/a1-800.webp 800w" sizes="(min-width:500px) 400px, 84vw" width="1280" height="720" alt="Plakat: X Słów Boga - Dekalog życia, dzień skupienia dla młodych" loading="lazy" decoding="async">
+    <div class="tx"><time datetime="2026-11-09">9 listopada 2026</time><h3>X Słów Boga - Dekalog życia</h3><p>Dzień skupienia dla młodych (18+): warsztaty, Eucharystia, adoracja i rozmowy. Cykl zaczynamy od I i II przykazania.</p><p class="gdz">21 listopada, 10:00-16:00, ul. Judyma 47</p></div>
+   </article>
+   <article class="kar">
+    <img src="img/a2-480.webp" srcset="img/a2-480.webp 480w, img/a2-800.webp 800w" sizes="(min-width:500px) 400px, 84vw" width="1280" height="720" alt="Plakat: Spocząć na Sercu Jezusa, spotkanie modlitewne" loading="lazy" decoding="async">
+    <div class="tx"><time datetime="2026-11-05">5 listopada 2026</time><h3>Zatrzymaj się na chwilę i spocznij na Sercu Jezusa</h3><p>Wieczór uwielbienia, modlitwy wynagradzającej i zawierzenia w pierwszy piątek miesiąca.</p><p class="gdz">6 listopada, pierwszy piątek</p></div>
+   </article>
+   <article class="kar">
+    <img src="img/a3-480.webp" srcset="img/a3-480.webp 480w, img/a3-800.webp 800w" sizes="(min-width:500px) 400px, 84vw" width="1280" height="720" alt="Grafika: Rozwiń skrzydła i leć" loading="lazy" decoding="async">
+    <div class="tx"><time datetime="2026-10-18">18 października 2026</time><h3>Rozwiń skrzydła i leć…</h3><p>Każde dziecko potrzebuje korzeni i skrzydeł. Jedna z naszych wychowanek osiągnęła dorosłość i rozpoczęła samodzielne życie.</p></div>
+   </article>
+   <article class="kar">
+    <img src="img/a4-480.webp" srcset="img/a4-480.webp 480w, img/a4-800.webp 800w" sizes="(min-width:500px) 400px, 84vw" width="1280" height="720" alt="Plakat: Jesteś w Sercu Boga, dzień skupienia dla rodziców" loading="lazy" decoding="async">
+    <div class="tx"><time datetime="2026-09-26">26 września 2026</time><h3>Jesteś w Sercu Boga</h3><p>Dzień skupienia dla rodziców zastępczych i rodziców, którzy chcą pogłębić więź z Bogiem, z sobą i z drugim człowiekiem.</p><p class="gdz">3 października, 10:00-15:00</p></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="straz">
+ <div class="w straz">
+  <div>{{TARCZA}}</div>
+  <div>
+   <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+   <h2>Straż Honorowa: godzina z Jezusem raz w miesiącu</h2>
+   <p style="margin-top:20px">Od początku Dzieło Wynagradzania łączyło siostry i osoby świeckie. Obok zgromadzenia powstało stowarzyszenie „Straż Honorowa”, by, jak pisał Ojciec Założyciel, „wynagradzać wszystkie obrazy i zniewagi” oraz upraszać łaski dla potrzebujących. Najprężniej działa we Włoszech, jest obecne także w Polsce.</p>
+   <ul class="lista">
+    <li>raz w miesiącu godzina adoracji Najświętszego Sakramentu, w wybranym przez siebie dniu i o wybranej godzinie,</li>
+    <li>szczególna cześć Najświętszego Serca Jezusa w pierwsze piątki miesiąca,</li>
+    <li>codzienne modlitwy, praca, radości i cierpienia przemieniane w akty miłości,</li>
+    <li>„jeden strażnik + jeden nowy”: zaproszenie kolejnej osoby.</li>
+   </ul>
+   <a class="btn ob2" href="#kontakt">Zapytaj o Straż Honorową</a>
+  </div>
+ </div>
+</section>
+
+<section id="dom" class="ciem">
+ <div class="w">
+  <div class="dom">
+   <div>
+    <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+    <h2>Rodzinny Dom im. Serca Jezusa</h2>
+   </div>
+   <div class="op">
+    <p>To praktyczna forma naszego powołania wynagradzającego. Chcemy, żeby dzieci czuły się tu <b>ważne, wartościowe i kochane przez Boga i ludzi</b>, i żeby miały dom, do którego mogą wracać jak do własnych korzeni.</p>
+    <p style="margin:0">Jesteśmy całodobową placówką opiekuńczo-wychowawczą typu rodzinnego, współfinansowaną głównie przez Gminę Lublin. Dzięki Waszemu wsparciu nasi wychowankowie mogą lepiej się rozwijać. Bóg zapłać!</p>
+   </div>
+  </div>
+  <div class="gal">
+   <div class="nag" style="margin-bottom:18px;justify-content:flex-end"><div class="str" data-tor="t2"><button type="button" class="pv" aria-label="Poprzednie zdjęcia"><svg style="transform:scaleX(-1)"><use href="#str"/></svg></button><button type="button" class="nx" aria-label="Następne zdjęcia"><svg><use href="#str"/></svg></button></div></div>
+   <div class="tor" id="t2">
+    <button class="fot" type="button" data-big="img/g1-900.webp"><img src="img/g1-800.webp" srcset="img/g1-480.webp 480w, img/g1-800.webp 800w, img/g1-900.webp 900w" sizes="(min-width:960px) 510px, 360px" width="900" height="599" alt="Zimowa zabawa: dzieci i siostra przy bałwanie" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/m3-500.webp"><img src="img/m3-480.webp" srcset="img/m3-480.webp 480w, img/m3-500.webp 500w" sizes="290px" width="500" height="590" alt="Siostra z dzieckiem na plaży" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g6-900.webp"><img src="img/g6-800.webp" srcset="img/g6-480.webp 480w, img/g6-800.webp 800w, img/g6-900.webp 900w" sizes="(min-width:960px) 455px, 320px" width="900" height="675" alt="Dwaj chłopcy w odświętnych strojach" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g3-500.webp"><img src="img/g3-480.webp" srcset="img/g3-480.webp 480w, img/g3-500.webp 500w" sizes="255px" width="500" height="668" alt="Mała dziewczynka w piaskownicy" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g2-900.webp"><img src="img/g2-800.webp" srcset="img/g2-480.webp 480w, img/g2-800.webp 800w, img/g2-900.webp 900w" sizes="(min-width:960px) 510px, 360px" width="900" height="599" alt="Dzieci przy kozie w ogrodzie" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g4-500.webp"><img src="img/g4-480.webp" srcset="img/g4-480.webp 480w, img/g4-500.webp 500w" sizes="190px" width="500" height="893" alt="Dwie dziewczynki w granatowych sukienkach" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g5-1600.webp"><img src="img/g5-800.webp" srcset="img/g5-480.webp 480w, img/g5-800.webp 800w, img/g5-1280.webp 1280w" sizes="(min-width:960px) 680px, 480px" width="1600" height="800" alt="Piknik na trawie z dziećmi i siostrami" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g7-900.webp"><img src="img/g7-800.webp" srcset="img/g7-480.webp 480w, img/g7-800.webp 800w, img/g7-900.webp 900w" sizes="(min-width:960px) 455px, 320px" width="900" height="675" alt="Spacer w parku przy placu zabaw" loading="lazy" decoding="async"></button>
+    <button class="fot" type="button" data-big="img/g8-480.webp"><img src="img/g8-480.webp" width="480" height="640" alt="Siostra z małym dzieckiem" loading="lazy" decoding="async"></button>
+   </div>
+  </div>
+  <div class="pom" id="wesprzyj">
+   <div>
+    <h3>Jak można pomóc</h3>
+    <ul>
+     <li>darowizna jednorazowa lub stała</li>
+     <li>wsparcie rzeczowe, szczególnie na Dzień Dziecka</li>
+     <li>wolontariat: wystarczy napisać lub zadzwonić</li>
+     <li>zajęcia terapeutyczne, warsztaty, korepetycje</li>
+     <li>remonty: malowanie pokoi, podłogi, oświetlenie, łazienki</li>
+     <li>środki czystości i artykuły higieniczne</li>
+     <li>wyprawki szkolne: plecaki, przybory, podręczniki, laptopy</li>
+     <li>meble i sprzęt AGD/RTV</li>
+     <li>wsparcie duchowe: modlitwa i dobre myśli</li>
+    </ul>
+   </div>
+   <div class="konto">
+    <p>Ofiary na Rodzinny Dom Dziecka</p>
+    <p>Bank Pekao S.A., V Oddział w Lublinie</p>
+    <p class="nr" id="nrk">46 1240 1503 1111 0000 1753 2619</p>
+    <button class="btn cz" type="button" id="kop">Skopiuj numer konta</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sza">
+ <div class="w film">
+  <div>
+   <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+   <h2>Zobacz nasze codzienne życie</h2>
+   <p style="margin-top:18px;color:var(--mut)">Film „Wynagrodzicielki NSJ - nasze codzienne życie” z naszego kanału.</p>
+  </div>
+  <button class="wid" type="button" data-yt="cneEUWERYjQ" aria-label="Odtwórz film: Wynagrodzicielki NSJ - nasze codzienne życie">
+   <img src="img/yt-800.webp" srcset="img/yt-480.webp 480w, img/yt-800.webp 800w, img/yt-1280.webp 1280w" sizes="(min-width:960px) 52vw, 92vw" width="1280" height="720" alt="" loading="lazy" decoding="async">
+   <span class="gr"><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9z"/></svg></span>
+  </button>
+ </div>
+</section>
+
+<section id="powolania">
+ <div class="w">
+  <div class="pow">
+   <div class="fo"><img src="img/m7-800.webp" srcset="img/m7-480.webp 480w, img/m7-800.webp 800w, img/m7-1024.webp 1024w" sizes="(min-width:960px) 40vw, 92vw" width="1024" height="1024" alt="Siostry z wychowankami i biało-czerwoną flagą" loading="lazy" decoding="async"></div>
+   <div>
+    <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+    <h2>Każda droga powołania ma jeden cel: świętość</h2>
+    <p style="margin-top:20px">W swoich planach na przyszłość uwzględnij wolę Bożą. Pytaj Boga, rozmawiaj z Nim, słuchaj. Rozeznawanie wymaga modlitwy i wsparcia doświadczonych osób, a odpowiedź, czy to małżeństwo, czy życie konsekrowane, powinna być świadoma, wolna i uczyniona z miłością.</p>
+    <p style="color:var(--mut)">Jeśli potrzebujesz pomocy albo masz pytania, napisz do nas. Zapraszamy też na dni skupienia z rozeznawaniem powołania.</p>
+    <div class="cta">
+     <a class="btn cz" href="mailto:powolania@wynagrodzicielkinsj.pl">Napisz do sióstr</a>
+     <a class="btn ob2" href="#spotkania">Dni skupienia</a>
+    </div>
+   </div>
+  </div>
+  <div class="swiat">
+   <div>
+    <h3>Zgromadzenie w Polsce i na świecie</h3>
+    <div class="kraje"><span>Polska</span><span>Włochy</span><span>Stany Zjednoczone</span><span>Brazylia</span><span>Wybrzeże Kości Słoniowej</span></div>
+    <p>Siostry pracują jako nauczycielki, katechetki, wychowawczynie i misjonarki, prowadzą grupy parafialne i wspólnoty, które żyją charyzmatem wynagradzania.</p>
+   </div>
+   <img src="img/afr-800.webp" srcset="img/afr-480.webp 480w, img/afr-800.webp 800w, img/afr-1024.webp 1024w" sizes="(min-width:960px) 34vw, 92vw" width="1024" height="1024" alt="Dzieci na misji Zgromadzenia" loading="lazy" decoding="async">
+  </div>
+ </div>
+</section>
+
+<section id="kontakt" class="sza" style="padding-bottom:0">
+ <div class="w">
+  <div class="kon">
+   <div>
+    <div class="sep"><svg aria-hidden="true"><use href="#znak"/></svg></div>
+    <h2>Kontakt</h2>
+    <div class="dane">
+     <div><b>Siostry Służebnice Wynagrodzicielki Najświętszego Serca Jezusowego</b><span>ul. Judyma 47, 20-716 Lublin</span></div>
+     <div><b>Telefon</b><a href="tel:+48815277070">81 527 70 70</a><br><a href="tel:+48606397960">606 397 960</a> <span>(Rodzinny Dom Dziecka, 9:00-17:00, w wyjątkowych sytuacjach całą dobę)</span></div>
+     <div><b>Powołania i dni skupienia</b><a href="mailto:powolania@wynagrodzicielkinsj.pl">powolania@wynagrodzicielkinsj.pl</a></div>
+     <div><b>Rodzinny Dom Dziecka</b><a href="mailto:rodzinny.dom@wynagrodzicielkinsj.pl">rodzinny.dom@wynagrodzicielkinsj.pl</a></div>
+    </div>
+   </div>
+   <form class="int" id="int" novalidate>
+    <h3>Skrzynka intencji</h3>
+    <p>Napisz, w jakiej intencji mamy się modlić. Polecimy ją Bogu w naszej modlitwie.</p>
+    <label for="i1">Imię (nieobowiązkowo)</label>
+    <input id="i1" name="imie" autocomplete="given-name">
+    <label for="i2">Intencja</label>
+    <textarea id="i2" name="intencja" required></textarea>
+    <button class="btn cz" type="submit">Przekaż intencję</button>
+    <p class="ok" id="intok" hidden>To podgląd strony, formularz nie wysyła jeszcze wiadomości.</p>
+   </form>
+  </div>
+ </div>
+ <div class="mapa" id="mapa" data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4995.916693760766!2d22.492442!3d51.238262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa76570270083a8f1!2sDom+zakonny+Instytutu+Siost+S%C5%82u%C5%BCebnic+Wynagrodzicielek+Naj%C5%9Bwi%C4%99tszego+Serca+Jezusa!5e0!3m2!1spl!2spl!4v1515092453119"></div>
+</section>
+</main>
+
+<footer class="stop">
+ <div class="w">
+  <div class="g">
+   <div><b>Siostry Służebnice Wynagrodzicielki Najświętszego Serca Jezusowego</b><p>Rodzinny Dom Dziecka im. Serca Jezusa</p><p>ul. Judyma 47, 20-716 Lublin</p></div>
+   <div><b>Telefon</b><p><a href="tel:+48815277070">81 527 70 70</a></p><p><a href="tel:+48606397960">606 397 960</a></p></div>
+   <div><b>Facebook</b><p><a href="https://www.facebook.com/zatrzymajsienachwilensjpl" rel="noopener">Zatrzymaj się na chwilę</a></p><p><a href="https://www.facebook.com/ChildHope01" rel="noopener">Rodzinny Dom Dziecka</a></p></div>
+   <div><b>Na stronie</b><p><a href="#spotkania">Spotkania</a></p><p><a href="#wesprzyj">Darowizny</a></p><p><a href="#kontakt">Skrzynka intencji</a></p></div>
+  </div>
+  <div class="dol"><span>© 2026 Siostry Służebnice Wynagrodzicielki NSJ</span>{{BADGE_LINK}}</div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><button type="button" aria-label="Zamknij">×</button><img alt=""></div>
+
+<script>
+(function(){
+var b=document.querySelector('.burg'),m=document.getElementById('mob');
+function zamk(){b.setAttribute('aria-expanded','false');m.classList.remove('on');document.body.style.overflow=''}
+b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';if(o){zamk()}else{b.setAttribute('aria-expanded','true');m.classList.add('on');document.body.style.overflow='hidden'}});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',zamk)});
+// tory przesuwane palcem, mysza i strzalkami
+document.querySelectorAll('.str').forEach(function(s){
+ var t=document.getElementById(s.dataset.tor),pv=s.querySelector('.pv'),nx=s.querySelector('.nx');
+ function krok(){var k=t.children[0];return k?k.getBoundingClientRect().width+20:300}
+ function st(){pv.disabled=t.scrollLeft<4;nx.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4}
+ pv.onclick=function(){t.scrollBy({left:-krok(),behavior:'smooth'})};nx.onclick=function(){t.scrollBy({left:krok(),behavior:'smooth'})};
+ t.addEventListener('scroll',st,{passive:true});addEventListener('resize',st);st();
+ var x0,s0,ruch=false,wcis=false;
+ t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;wcis=true;ruch=false;x0=e.clientX;s0=t.scrollLeft});
+ addEventListener('pointermove',function(e){if(!wcis)return;var dx=e.clientX-x0;if(Math.abs(dx)>5){ruch=true;t.classList.add('drag')}if(ruch)t.scrollLeft=s0-dx});
+ addEventListener('pointerup',function(){if(!wcis)return;wcis=false;setTimeout(function(){t.classList.remove('drag')},0)});
+ t.addEventListener('click',function(e){if(ruch){e.preventDefault();e.stopPropagation();ruch=false}},true);
+});
+// powiekszenie zdjec
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.fot').forEach(function(f){f.addEventListener('click',function(){li.src=f.dataset.big;li.alt=f.querySelector('img').alt;lb.classList.add('on')})});
+lb.addEventListener('click',function(){lb.classList.remove('on')});
+addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('on');zamk()}});
+// film: odtwarzacz dopiero po kliknieciu
+document.querySelectorAll('.wid').forEach(function(w){w.addEventListener('click',function(){if(w.querySelector('iframe'))return;var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+w.dataset.yt+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title='Wynagrodzicielki NSJ - nasze codzienne życie';w.appendChild(f)})});
+// mapa przy przewinieciu
+var mp=document.getElementById('mapa');
+if('IntersectionObserver' in window){new IntersectionObserver(function(e,o){if(e[0].isIntersecting){var f=document.createElement('iframe');f.src=mp.dataset.src;f.title='Mapa dojazdu: ul. Judyma 47, Lublin';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mp.appendChild(f);o.disconnect()}},{rootMargin:'400px'}).observe(mp)}
+// numer konta
+var kb=document.getElementById('kop');
+kb.addEventListener('click',function(){var n=document.getElementById('nrk').textContent.replace(/\s/g,'');(navigator.clipboard?navigator.clipboard.writeText(n):Promise.reject()).then(function(){kb.textContent='Skopiowano'},function(){kb.textContent=n});setTimeout(function(){kb.textContent='Skopiuj numer konta'},2500)});
+// skrzynka intencji (podglad bez wysylki)
+document.getElementById('int').addEventListener('submit',function(e){e.preventDefault();document.getElementById('intok').hidden=false});
+})();
+</script>
+</body>
+</html>
